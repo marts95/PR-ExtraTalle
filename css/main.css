@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62, 5%;
+}
+#carouselExample{
+    display: flex;
+    width: 1440px;
+    padding: 0px 100px;
+    align-items: flex-start;
+    gap: 24px;
+}
+.boxNuestrasPrendas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+}
+.fotoCarousel{
+    display: flex;
+    width: 397px;
+    height: 503px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+
+}
+.irATienda{
+    display: flex;
+    width: 397px;
+    padding: 22px 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #0D0D0D;
+}
+.encontralas{
+    align-self: stretch;
+    color: #333;
+
+
+/* web/text/medium */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.nuestrasPrendas{
+    
+    color: #0D0D0D;
+    /* leading-trim: both;
+    text-edge: cap; */
+
+/* web/display/medium */
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.prendas{
+    display: flex;
+    width: 1440px;
+    padding: 100px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+}
+.textIrATienda{
+    color: #FAFAFA;
+text-align: right;
+
+
+/* web/label/large */
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.5px;
+}
+.textoYBoton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
