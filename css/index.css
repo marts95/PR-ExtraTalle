@@ -32,8 +32,6 @@ body .boton {
 
 .seccion {
   width: 100%;
-  height: 100vh;
-  padding-top: 10%;
 }
 
 .navbar {
@@ -44,10 +42,10 @@ body .boton {
   padding-inline: 110px;
   align-items: center;
   gap: 40px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: #fafafa;
+  background-color: transparent;
 }
 .navbar .navbar-logo {
   width: 116.279px;
@@ -90,6 +88,8 @@ body .boton {
 
 #inicio {
   background-image: url(../img/portada.png);
+  background-size: 100%;
+  height: 100vh;
 }
 #inicio .inicio-slogan {
   display: flex;
@@ -97,7 +97,7 @@ body .boton {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 100px;
-  padding-top: 10%;
+  padding-top: 15%;
   box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.1);
 }
 #inicio .inicio-slogan h1 {
@@ -120,11 +120,129 @@ body .boton {
 }
 
 #somos {
-  background-color: pink;
+  background-color: #f5f3f1;
+  display: flex;
+  padding-top: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+#somos .quienes {
+  display: flex;
+  width: 818px;
+  height: 134px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  gap: 0.5rem;
+}
+#somos .quienes h1 {
+  font-size: 48px;
+}
+#somos .quienes p {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+#somos .servicios {
+  margin: 100px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.3);
+}
+#somos .servicios .servicio {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+}
+#somos .servicios .servicio .imagen {
+  background-color: #d5171f;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
+}
+#somos .servicios .servicio .imagen img {
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+#somos .servicios .servicio h3 {
+  font-size: 24px;
+}
+#somos .servicios .servicio p {
+  font-size: 18px;
+}
+#somos .banner-somos {
+  background-image: url("../img/image-25.png");
+  background-size: cover;
+  align-self: stretch;
+  height: 615px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 100px;
+  padding-top: 150px;
+  gap: 48px;
+  padding-inline-end: 50%;
+}
+#somos .banner-somos h1 {
+  color: #ffffff;
+  font-size: 48px;
+}
+#somos .banner-somos h2 {
+  color: #ffffff;
+  font-size: 24px;
+}
+#somos .banner-somos .boton {
+  width: 304px;
 }
 
 #compromiso {
-  background-color: lightblue;
+  background-color: #f7bc5c;
+  height: 880px;
+}
+#compromiso .compromiso {
+  background-color: #ffffff;
+  display: flex;
+  width: 50%;
+  height: 364px;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+  position: absolute;
+  left: 100px;
+  top: calc(300vh + 258px);
+  border-radius: 4px;
+  background: #fafafa;
+  box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+}
+#compromiso .compromiso h1 {
+  font-size: 48px;
+}
+#compromiso .compromiso h3 {
+  font-size: 24px;
+  color: #515151;
+}
+#compromiso .compromiso p {
+  font-size: 20px;
+  color: #515151;
+}
+#compromiso img {
+  height: 880px;
+  padding-left: 50vw;
 }
 
 #visitanos {
