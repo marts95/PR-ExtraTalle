@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,43 +24,111 @@
     
    
    <div class="prendas">
-        <div class="textoYBoton">
-            <div class="boxNuestrasPrendas">
-                <p class="nuestrasPrendas">Nuestras prendas</p>
-                <p class="encontralas">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
-            </div>  
-            <div>
-                <button class="irATienda">
-                    <p class="textIrATienda">Ir a Tienda</p>
-                </button>
+        
+        <div class="boxNuestrasPrendas">
+            <p class="nuestrasPrendas">Nuestras prendas</p>
+            <p class="encontralas">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
+        </div>
+        
+        <!-- inicia carusel bs-->
+
+        <div id="carouselRopaIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="1" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="2" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="4" aria-label="Slide 4"></button>
             </div>
-        </div>    
-    <!-- inicia carousel -->
-        <div id="carouselExample" class="carousel slide">
+        
             <div class="carousel-inner">
+                
+                    <div class="carousel-item active">
+                        <div class="row">
+                            
+                                <img src="./img/1e604606743775c2c6eeadb38c457daf.png" class="d-inline w-50 fotoPrenda" alt="...">
+                                <img src="./img/ECO00MO1EST copia.png" class="d-inline w-50 fotoPrenda" alt="...">
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            
+                                <img src="./img/ECOO2VE21 copia.png" class="d-inline w-50 fotoPrenda" alt="...">
+                                <img src="./img/pantalon.png" class="d-inline w-50 fotoPrenda" alt="...">
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            
+                                <img src="./img/imagen.png" class="d-inline w-50 fotoPrenda" alt="...">
+                                <img src="./img/imagen.png" class="d-inline w-50 fotoPrenda" alt="...">
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            
+                                <img src="./img/1e604606743775c2c6eeadb38c457daf.png" class="d-inline w-50 fotoPrenda" alt="...">
+                                <img src="./img/ECO00MO1EST copia.png" class="d-inline w-50 fotoPrenda" alt="...">
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            
+                                <img src="./img/ECOO2VE21 copia.png" class="d-inline w-50 fotoPrenda" alt="...">
+                                <img src="./img/pantalon.png" class="d-inline w-50 fotoPrenda" alt="...">
+                        
+                        </div>
+                    </div>
+                       
+
+            </div>
+            
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>  
+              
+            </button>
+        </div>
+
+        <!-- fin carusel bs-->
+        
+           
+    <!-- inicia carousel que no funciona-->
+        <!-- <div id="carouselExample" class="carousel slide container-fluid">
+            <div class="carousel-inner container-fluid">
             
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-md-4">
-                        <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 1">
+                        <img src="./img/ECO00MO1'EST'' copia.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 1">
                         </div>
 
                         <div class="col-md-4">
-                        <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 2">
+                        <img src="./img/ECO00MO1'EST'' copia.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 2">
                         </div>
 
-                        <div class="col-md-4">
-                        <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 3">
-                        </div>
                     </div>
                 </div> 
 
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-md-4">
-                        <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 4">
+                        <img src="./img/ECOO2VE21 copia.png" class="d-block justify-content-center fotoCarousel" alt="Imagen 3">
                         </div>
 
+                        <div class="col-md-4">
+                        <img src="./img/pantalon.png" class="d-block justify-content-center fotoCarousel" alt="Imagen 4">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
                         <div class="col-md-4">
                         <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 5">
                         </div>
@@ -64,22 +136,7 @@
                         <div class="col-md-4">
                         <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 6">
                         </div>
-                    </div>
-                </div>
 
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                        <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 7">
-                        </div>
-
-                        <div class="col-md-4">
-                        <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 8">
-                        </div>
-
-                        <div class="col-md-4">
-                        <img src="./img/imagen.png" class="d-flex justify-content-center fotoCarousel" alt="Imagen 9">
-                        </div>
                     </div>
                 </div>
             </div>  
@@ -92,8 +149,16 @@
             <span class="visually-hidden">Next</span>
             </button>
             
-        </div> 
-    <!-- fin carousel -->  
+        </div>  -->
+    <!-- fin carousel q no funciona-->  
+         
+
+
+    <!-- inicia botón ir a tienda-->
+        <button class="irATienda">
+            <p class="textIrATienda">Ir a Tienda</p>
+        </button>
+    
 
     </div>
 

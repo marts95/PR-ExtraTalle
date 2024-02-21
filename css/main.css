@@ -5,92 +5,102 @@
 html {
     font-size: 62, 5%;
 }
-#carouselExample{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+.prendas{
     display: flex;
-    width: 1440px;
-    padding: 0px 100px;
+    width: 360px;
+    padding: 32px 16px;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    gap: 24px;
+    gap: 24px; 
 }
 .boxNuestrasPrendas{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    gap: 24px;
-    flex: 1 0 0;
-}
-.fotoCarousel{
-    display: flex;
-    width: 397px;
-    height: 503px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 4px;
-
-}
-.irATienda{
-    display: flex;
-    width: 397px;
-    padding: 22px 44px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #0D0D0D;
-}
-.encontralas{
+    gap: 12px;
     align-self: stretch;
-    color: #333;
-
-
-/* web/text/medium */
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
-.nuestrasPrendas{
-    
-    color: #0D0D0D;
-    /* leading-trim: both;
-    text-edge: cap; */
 
-/* web/display/medium */
+.nuestrasPrendas{
+    color: var(--negro, #0D0D0D);
+    text-align: center;
+   
+
+    /* mobile/headline/medium */
     font-family: Inter;
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-.prendas{
-    display: flex;
-    width: 1440px;
-    padding: 100px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
 
+.encontralas{
+    align-self: stretch;
+    color: var(--highlight-texto-secundario, #515151);
+    
+
+    /* mobile/body/medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
 }
+
+.irATienda{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--negro, #0D0D0D);
+}
+
 .textIrATienda{
     color: #FAFAFA;
-text-align: right;
+    text-align: center;
 
-
-/* web/label/large */
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.5px;
+    /* mobile/label/medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5px;
 }
-.textoYBoton{
+
+.fotoPrenda{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    width: 160px;
+    height: 202px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.carousel-indicators button{
+   
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--negro, #0D0D0D);
+}
+
+.carousel-control-next{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: -14px;
+    top: 87px;
+    fill: #FAFAFA;
+    filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
 }
