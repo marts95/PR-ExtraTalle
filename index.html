@@ -10,6 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <!-- link a style css -->
      <link rel="stylesheet" href="./css/main.css">
     
@@ -23,89 +24,41 @@
     <div class="prendas">
         
         <div class="boxNuestrasPrendas">
-            <p class="nuestrasPrendas">Nuestras prendas</p>
+            <p class="nuestrasPrendas  nuestrasPrendasWeb">Nuestras prendas</p>
             <p class="encontralas">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
         </div>
-        
-        <!-- inicia carusel bs mobile-->
 
-        <div id="carouselRopaIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="1" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="2" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide-to="4" aria-label="Slide 4"></button>
-            </div>
-        
-            <div class="carousel-inner">
-                
-                    <div class="carousel-item active">
-                        <div class="row">
-                            
-                                <img src="./img/enterito.png" class="d-inline w-50 fotoPrenda" alt="...">
-                                <img src="./img/imagen.png" class="d-inline w-50 fotoPrenda" alt="...">
-                        
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            
-                                <img src="./img/musculosa.png" class="d-inline w-50 fotoPrenda" alt="...">
-                                <img src="./img/imagen.png" class="d-inline w-50 fotoPrenda" alt="...">
-                        
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            
-                                <img src="./img/pantalon.png" class="d-inline w-50 fotoPrenda" alt="...">
-                                <img src="./img/imagen.png" class="d-inline w-50 fotoPrenda" alt="...">
-                        
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            
-                                <img src="./img/vestidoNaranja.png" class="d-inline w-50 fotoPrenda" alt="...">
-                                <img src="./img/vestidoNaranja.png" class="d-inline w-50 fotoPrenda" alt="...">
-                        
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            
-                                <img src="./img/vestidoRosa.png" class="d-inline w-50 fotoPrenda" alt="...">
-                                <img src="./img/pantalon.png" class="d-inline w-50 fotoPrenda" alt="...">
-                        
-                        </div>
-                    </div>
-                       
+        <div class="container">
+            <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+              <div class="carousel-inner" id="carousel-inner">
 
-            </div>
-            
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselRopaIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>  
+                <!--  slides dinámicos -->
+              </div>
               
-            </button>
-        </div>
-
-        <!-- fin carusel bs mobile-->
-        
-           
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <!-- Indicadores -->
+              <ol class="carousel-indicators" id="carousel-indicators"></ol>
+            </div>
+          </div>
     
-
     <!-- inicia botón ir a tienda-->
-        <button class="irATienda">
+        <button class="irATienda nuestrasPrendasWeb">
             <p class="textIrATienda">Ir a Tienda</p>
         </button>
-    
+    <!-- fin botón ir a tienda-->
 
     </div>
 
-   <!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!--  archivo scripts JS personalizado -->
+    <script src="./js/carousel.js"></script>
+
 
 </body>
 </html>

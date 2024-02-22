@@ -7,36 +7,14 @@ html {
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-
-.prendas{
-    display: flex;
-    width: 360px;
-    padding: 32px 16px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px; 
-}
-.boxNuestrasPrendas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-    align-self: stretch;
-}
-
-.nuestrasPrendas{
-    color: var(--negro, #0D0D0D);
-    text-align: center;
-   
-
-    /* mobile/headline/medium */
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.carousel-control-next{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: -14px;
+    top: 87px;
+    fill: #FAFAFA;
+    filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
 }
 
 .encontralas{
@@ -52,6 +30,16 @@ html {
     line-height: normal; 
 }
 
+.fotoPrenda{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
 .irATienda{
     display: flex;
     padding: 20px 30px;
@@ -61,6 +49,29 @@ html {
     align-self: stretch;
     border-radius: 4px;
     background: var(--negro, #0D0D0D);
+}  
+  
+
+.nuestrasPrendas{
+    color: var(--negro, #0D0D0D);
+    text-align: center;
+   
+
+    /* mobile/headline/medium */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.prendas{
+    display: flex;
+    width: 100vw;
+    padding: 32px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .textIrATienda{
@@ -76,31 +87,23 @@ html {
     letter-spacing: 0.5px;
 }
 
-.fotoPrenda{
-    display: flex;
-    width: 160px;
-    height: 202px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
 
-.carousel-indicators button{
-   
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--negro, #0D0D0D);
+/* Estilo para mostrar dos imágenes en una fila en dispositivos móviles */
+@media (max-width: 767px) {
+    .carousel-item .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
 }
+@media (min-width:768px){
+    #carousel-indicators li{
+        opacity: 0%;
+    }
 
-.carousel-control-next{
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    right: -14px;
-    top: 87px;
-    fill: #FAFAFA;
-    filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
+    .prendas{
+        padding-top: 100px;
+        gap: 48px;
+    }    
+
+
 }
