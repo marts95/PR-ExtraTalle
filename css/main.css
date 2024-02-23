@@ -7,6 +7,18 @@ html {
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+
+#carousel-indicators li{
+    opacity: 0%;
+}
+.boxNuestrasPrendas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
 .carousel-control-next{
     width: 28px;
     height: 28px;
@@ -20,15 +32,13 @@ html {
 .encontralas{
     align-self: stretch;
     color: var(--highlight-texto-secundario, #515151);
-    
-
-    /* mobile/body/medium */
     font-family: Inter;
-    font-size: 14px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
 }
+
 
 .fotoPrenda{
     width: 50vw;
@@ -39,30 +49,38 @@ html {
     gap: 10px;
     flex-shrink: 0;
 }
-
 .irATienda{
+    background: var(--negro, #0D0D0D);
+    border-radius: 4px;
     display: flex;
-    padding: 20px 30px;
+    width: 397px;
+    padding: 22px 44px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    align-self: stretch;
-    border-radius: 4px;
-    background: var(--negro, #0D0D0D);
-}  
+    flex-shrink: 0;
+}
+ 
   
 
 .nuestrasPrendas{
     color: var(--negro, #0D0D0D);
     text-align: center;
-   
-
-    /* mobile/headline/medium */
     font-family: Inter;
-    font-size: 24px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.prendas{
+    display: flex;
+    width: 1440px;
+    height: 714px;
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 .prendas{
     display: flex;
@@ -88,17 +106,40 @@ html {
 }
 
 
-/* Estilo para mostrar dos imágenes en una fila en dispositivos móviles */
-@media (max-width: 767px) {
+/* media query para dispositivos móviles */
+@media (max-width: 768px) {
     .carousel-item .col {
       flex: 0 0 50%;
       max-width: 50%;
     }
-}
-@media (min-width:768px){
+
     #carousel-indicators li{
-        opacity: 0%;
+        opacity: 100%;
     }
+    .boxNuestrasPrendas{
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+    }
+
+    .encontralas{
+        font-size: 0.875rem;
+    }
+    .irATienda{
+        
+        padding: 20px 30px;
+        align-self: stretch;
+             
+    } 
+    .nuestrasPrendas{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width:768px){
+    
 
     .prendas{
         padding-top: 100px;
