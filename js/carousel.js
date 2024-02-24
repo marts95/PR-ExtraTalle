@@ -1,17 +1,18 @@
 // Lista de imágenes
 var images = [
-    "./img/imagen.png",
-    "./img/imagen.png",
-    "./img/imagen.png",
-    "./img/musculosa.png",
-    "./img/pantalon.png",
-    "./img/vestidoNaranja.png",
-    "./img/imagen.png",
-    "./img/enterito.png",
-    "./img/pantalon.png",
-    "./img/enterito.png",
-    "./img/enterito.png",
-    "./img/musculosa.png"
+  "./img/enterito.png",
+  "./img/pantalon.png",
+  "./img/vestidoNaranja.png",
+  "./img/topRayas.png",
+  "./img/pantalonVerde.png",
+  "./img/topNegro.png",
+  "./img/ubkbpt941.png",
+  "./img/flores.png",
+  "./img/halterTop.png",
+  "./img/imagen.png",
+  "./img/imagen.png",
+  "./img/imagen.png",
+   
   ];
   
     
