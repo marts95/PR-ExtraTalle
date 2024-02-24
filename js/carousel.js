@@ -1,7 +1,7 @@
 // Lista de imágenes
 var images = [
-    "./img/enterito.png",
-    "./img/musculosa.png",
+    "./img/imagen.png",
+    "./img/imagen.png",
     "./img/imagen.png",
     "./img/musculosa.png",
     "./img/pantalon.png",
