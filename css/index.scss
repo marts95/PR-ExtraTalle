@@ -49,6 +49,7 @@ html {
             }
 
         }
+        
         .irATienda{
             background: var(--negro, #0D0D0D);
             border-radius: 4px;
@@ -70,7 +71,7 @@ html {
                 letter-spacing: 0.5px;
             }
         }
-
+    
     }
 
 }
@@ -85,7 +86,7 @@ html {
     padding: 0px 100px;
     align-items: flex-start;
     gap: 24px;
-       
+    
     .carousel-control-next{
         width: 28px;
         height: 28px;

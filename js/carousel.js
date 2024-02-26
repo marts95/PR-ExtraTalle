@@ -35,7 +35,9 @@ var images = [
         var activeClass = index === 0 ? 'active' : ''; // Marca el primer slide como activo
         innerHtml += '<div class="carousel-item ' + activeClass + '"><div class="row">';
         chunk.forEach(function(image) {
-          innerHtml += '<div class="col"><img src="' + image + '" class="d-block w-100" alt="..."></div>';
+          innerHtml += 
+          '<div class="col"><img src="' + image + '" class="d-block w-100" alt="..."></div>';
+                  
         });
         innerHtml += '</div></div>';
         // Agregar un indicador para cada slide
