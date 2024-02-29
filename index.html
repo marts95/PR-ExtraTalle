@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <script
       src="https://kit.fontawesome.com/fafe08d498.js"
       crossorigin="anonymous"
@@ -35,6 +38,40 @@
         </h3>
         <button class="boton">Explorar la colección</button>
       </div>
+
+      <!-- codigo carousel Ceci aquí -->
+
+      <!-- inicia sección Nuestras prendas con carousel dinámico -->
+    <div class="prendas">
+      <div class="textoYBoton">  
+        <div class="boxNuestrasPrendas">
+            <p class="nuestrasPrendas">Nuestras prendas</p>
+            <p class="encontralas">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
+        </div>     
+        <button class="irATienda">
+          <p class="textIrATienda">Ir a Tienda</p>
+        </button>
+      </div>  
+    </div>
+
+      <div class="container">
+          <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel-inner">
+
+            <!--  slides dinámicos -->
+            </div>
+            
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Indicadores -->
+            <ol class="carousel-indicators" id="carousel-indicators"></ol>
+          </div>
+      </div>
+    <!-- fin sección Nuestras prendas con carousel dinámico -->
+
+
       <div class="vermas-prenda">
         <figure>
           <img src="../img/inicio-vermas-1.jpg" alt="">
@@ -230,5 +267,12 @@
     >
       <i class="fa-brands fa-whatsapp" style="font-size: 35px"></i>
     </a>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!--  archivo scripts JS personalizado -->
+    <script src="./js/carousel.js"></script>
   </body>
 </html>
