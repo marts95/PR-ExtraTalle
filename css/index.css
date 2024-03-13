@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* font-family: 'Inter', sans-serif*/
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -336,6 +337,114 @@ body .boton:hover {
   width: 304px;
 }
 
+.textoExtraLarge {
+  color: var(--negro, #0D0D0D);
+  text-align: center;
+  font-family: Secular One, sans-serif;
+  font-size: 30rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 40.68vh;
+  color: var(--negro, #0D0D0D);
+}
+@media (max-width: 768px) {
+  .textoExtraLarge {
+    font-size: 10rem;
+    height: 12vh;
+  }
+}
+
+#carouselCommentarios {
+  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+  background: var(--blanco, #FFF);
+}
+#carouselCommentarios #carouselExampleDark {
+  width: 80vw;
+  height: 40vh;
+  border-radius: 12px;
+  background: #FAFAFA;
+  /* elevacion */
+  box-shadow: 8px 8px 35px 8px rgba(0, 0, 0, 0.15);
+}
+#carouselCommentarios #carouselExampleDark .rounded-indicators {
+  list-style: none;
+  padding: 0;
+}
+#carouselCommentarios #carouselExampleDark .rounded-indicators button {
+  display: inline-block;
+  background-color: #0D0D0D;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+#carouselCommentarios #carouselExampleDark .rounded-indicators button.active {
+  opacity: 1;
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner {
+  display: flex;
+  width: 80vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80vw;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item {
+  width: 80vw;
+  height: 35vh;
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .estrellas {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
+  text-align: center;
+  color: var(--highlight-texto-secundario, #515151);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
+    font-size: 0.9rem;
+  }
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
+  color: var(--highlight-texto-secundario, #515151);
+  text-align: center;
+  /* web/text/medium */
+  font-family: Inter;
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
+    font-size: 0.9rem;
+  }
+}
+
 #compromiso {
   background-color: #f7bc5c;
   height: 880px;
@@ -352,7 +461,7 @@ body .boton:hover {
   gap: 35px;
   position: absolute;
   left: 100px;
-  top: calc(450vh + 258px);
+  top: calc(580vh + 258px);
   border-radius: 4px;
   background: #fafafa;
   box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
