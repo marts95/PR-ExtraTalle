@@ -337,21 +337,15 @@ body .boton:hover {
   width: 304px;
 }
 
-.textoExtraLarge {
-  color: var(--negro, #0D0D0D);
-  text-align: center;
-  font-family: Secular One, sans-serif;
-  font-size: 30rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  height: 40.68vh;
+.comillas {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  width: 20vw;
   color: var(--negro, #0D0D0D);
 }
 @media (max-width: 768px) {
-  .textoExtraLarge {
-    font-size: 10rem;
-    height: 12vh;
+  .comillas {
+    width: 15vw;
   }
 }
 
@@ -407,7 +401,7 @@ body .boton:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 16px;
+  gap: 1.5vw;
 }
 #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption {
   display: flex;
@@ -419,14 +413,14 @@ body .boton:hover {
   color: var(--highlight-texto-secundario, #515151);
   text-align: center;
   font-family: Inter;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 @media (max-width: 768px) {
   #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
@@ -461,7 +455,7 @@ body .boton:hover {
   gap: 35px;
   position: absolute;
   left: 100px;
-  top: calc(580vh + 258px);
+  top: calc(600vh + 258px);
   border-radius: 4px;
   background: #fafafa;
   box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);

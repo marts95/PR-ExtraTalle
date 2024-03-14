@@ -353,20 +353,16 @@ body {
 }
 
 //  inicia sass carousel comentarios clientes
-.textoExtraLarge{
+.comillas{
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  width: 20vw;
   color: var(--negro, #0D0D0D);
-  text-align: center;
-  font-family: Secular One, sans-serif;
-  font-size: 30rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  height: 40.68vh;
-  color: var(--negro, #0D0D0D);
+ 
   
   @media (max-width:768px) {
-    font-size:10rem ;
-    height: 12vh;
+    width: 15vw;
+    
     
   }
 }
@@ -418,8 +414,6 @@ body {
             align-self: stretch;
 
             .carousel-item{
-              
-              // display: flex;
               width: 80vw;
               height:35vh;
               
@@ -428,7 +422,7 @@ body {
                   display: flex;
                   flex-direction: row;
                   justify-content: center;
-                  gap: 16px;
+                  gap: 1.5vw;
                 }
                 
             }
@@ -443,12 +437,12 @@ body {
                 color: var(--highlight-texto-secundario, #515151);
                 text-align: center;
                 font-family: Inter;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
                 @media (max-width:768px) {
-                  font-size:0.9rem ;
+                  font-size: 1rem ;
                   
                 }
               }
@@ -491,7 +485,7 @@ body {
     gap: 35px;
     position: absolute;
     left: 100px;
-    top: calc(580vh + 258px);
+    top: calc(600vh + 258px);
     border-radius: 4px;
     background: #fafafa;
     box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
