@@ -36,8 +36,9 @@ var images = [
         innerHtml += '<div class="carousel-item ' + activeClass + '"><div class="row">';
         chunk.forEach(function(image) {
           innerHtml += 
-          '<div class="col"><img src="' + image + '" class="d-block w-100" alt="..."></div>';
-                  
+          '<figure class="col position-relative"><img src="' + image + '" class="d-block w-100 fotoPrenda" alt="...">';
+          innerHtml += '<div class="capa"><div class="textoImagen">Prenda</div><button class="boton botonImagen">Ver más</button></div>';
+          innerHtml += '</figure>';        
         });
         innerHtml += '</div></div>';
         // Agregar un indicador para cada slide

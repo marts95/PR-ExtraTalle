@@ -190,12 +190,10 @@ body {
         }
     
     }
+    
 
 }
 
-#carousel-indicators li{
-    display: none;
-}
 
 .container{
     display: flex;
@@ -204,55 +202,110 @@ body {
     align-items: flex-start;
     gap: 24px;
     
-    .carousel-control-next{
-        width: 28px;
-        height: 28px;
-        position: absolute;
-        right: -14px;
-        top: 140px;
-        fill: #FAFAFA;
-        filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
-    }
-    .irATienda{
-      background: var(--negro, #0D0D0D);
-      border-radius: 4px;
-      display: flex;
-      width: 397px;
-      padding: 22px 44px;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
-      .textIrATienda{
-          color: #FAFAFA;
-          text-align: center;
-          font-family: Inter;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: normal;
-          letter-spacing: 0.5px;
+    #carouselExample{
+      figure {
+        position: relative;
+        // height: 80vh;
+        overflow: hidden;
+        // height: 615px;
+        // width: 605px;
+        border-radius: 4px;
       }
-    }
-    .rounded-indicators {
-      list-style: none;
-      padding: 0;
       
-      button {
-        display: inline-block;
-        background-color: #0D0D0D;
-        width: 10px;
-        height: 10px;
-        margin: 0 4px;
-        border-radius: 50%;
-        opacity: 0.5;
-        transition: 0.3s ease-in-out;
+      .capa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        .botonImagen {
+          position: absolute;
+          width: 70%;
+          top: 20vh;
+          left: 4vw;
+          
+        }
+        .textoImagen{
+              color: #FFF;
+              position:absolute;
+              top:12vh;
+              left:8vw;
+              text-align: center;
+              font-family: Inter;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              font-size: 2rem ;
+            }
       }
-    
-      button.active {
+  
+      figure:hover > .capa {
         opacity: 1;
+        visibility: visible;
+        @media(max-width:992px){
+          display: none;
+
+        }
       }
-    } 
+      
+      .carousel-control-next{
+          width: 28px;
+          height: 28px;
+          position: absolute;
+          right: -1.4vw;
+          top: 14vh;
+          fill: #FAFAFA;
+          filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
+      }
+      .irATienda{
+        background: var(--negro, #0D0D0D);
+        border-radius: 4px;
+        display: flex;
+        width: 100%;
+        padding: 2.2vh 4.4vw;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        .textIrATienda{
+            color: #FAFAFA;
+            text-align: center;
+            font-family: Inter;
+            font-size: 1.12rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.5px;
+        }
+      }
+      
+      .rounded-indicators {
+        list-style: none;
+        padding: 0;
+        
+        button {
+          display: inline-block;
+          background-color: red;
+          // background-color: #0D0D0D;
+          width: 1vw;
+          height: 1vh;
+          margin: 0 4px;
+          border-radius: 50%;
+          opacity: 0.5;
+          transition: 0.3s ease-in-out;
+        }
+      
+        button.active {
+          opacity: 1;
+        }
+      }
+    }  
 }
   // fin sass carousel prendas
 
@@ -421,7 +474,7 @@ body {
     border-radius: 12px;
     background: #FAFAFA;
     /* elevacion */
-    box-shadow: 8px 8px 35px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 
     
         .rounded-indicators {
