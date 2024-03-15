@@ -212,7 +212,47 @@ body {
         top: 140px;
         fill: #FAFAFA;
         filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
-    }   
+    }
+    .irATienda{
+      background: var(--negro, #0D0D0D);
+      border-radius: 4px;
+      display: flex;
+      width: 397px;
+      padding: 22px 44px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      .textIrATienda{
+          color: #FAFAFA;
+          text-align: center;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 0.5px;
+      }
+    }
+    .rounded-indicators {
+      list-style: none;
+      padding: 0;
+      
+      button {
+        display: inline-block;
+        background-color: #0D0D0D;
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+        border-radius: 50%;
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+      }
+    
+      button.active {
+        opacity: 1;
+      }
+    } 
 }
   // fin sass carousel prendas
 

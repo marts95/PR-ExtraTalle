@@ -47,7 +47,7 @@
             <p class="nuestrasPrendas">Nuestras prendas</p>
             <p class="encontralas">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
         </div>     
-        <button class="irATienda">
+        <button class="irATienda d-none d-md-block">
           <p class="textIrATienda">Ir a Tienda</p>
         </button>
       </div>  
@@ -64,8 +64,15 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+            
             <!-- Indicadores -->
-            <ol class="carousel-indicators" id="carousel-indicators"></ol>
+            <ol class="carousel-indicators rounded-indicators d-md-none " id="carousel-indicators"></ol>
+            
+            <button class="irATienda d-md-none">
+              <p class="textIrATienda">Ir a Tienda</p>
+            </button>
+
+            
           </div>
       </div>
 <!-- fin sección Nuestras prendas con carousel dinámico -->
