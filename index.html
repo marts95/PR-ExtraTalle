@@ -26,60 +26,64 @@
           <a href="#visitanos"><li>Visítanos</li></a>
         </ul>
       </div>
-      <button class="boton">Ir a la tienda</button>
+      <button class="boton d-none d-md-block">Ir a la tienda</button>
     </nav>
-    <section id="inicio" class="seccion inicio">
+
+    <section id="inicio" class="seccion">
       <div class="inicio-slogan">
-        <h1>Moda que se ajusta a vos,</h1>
-        <h1>no al revés</h1>
+        <h1>Moda que se ajusta a vos, no al revés</h1>
+        
         <h3>
           ¡Vestite con estilo y encontrá prendas que se adapatan a tu estilo de
           vida!
         </h3>
         <button class="boton">Explorar la colección</button>
       </div>
-
+    </section>  
 <!-- inicia sección Nuestras prendas con carousel dinámico -->
-    
-<div class="prendas">
-      <div class="textoYBoton">  
-        <div class="boxNuestrasPrendas">
-            <p class="nuestrasPrendas">Nuestras prendas</p>
-            <p class="encontralas">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
-        </div>     
-        <button class="irATienda d-none d-md-block">
-          <p class="textIrATienda">Ir a Tienda</p>
-        </button>
-      </div>  
-    </div>
+    <section id="seccionPrendas">
+      <div class="prendas">
+            <div class="textoYBoton">  
+              <div class="boxNuestrasPrendas">
+                  <p class="nuestrasPrendas">Nuestras prendas</p>
+                  <p class="encontralas">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
+              </div>     
+              <button class="irATienda d-none d-md-block">
+                <p class="textIrATienda">Ir a Tienda</p>
+              </button>
+            </div>  
+      
 
-      <div class="container">
-          <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
-            <div class="carousel-inner" id="carousel-inner">
+            <div class="container">
+                <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                  <div class="carousel-inner" id="carousel-inner">
 
-            <!--  slides dinámicos -->
+                  <!--  slides dinámicos -->
+                  </div>
+                  
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  
+                  <!-- Indicadores -->
+                  <ol class="carousel-indicators rounded-indicators d-md-none" id="carousel-indicators">
+                    
+                  </ol>
+                  
+                  <button class="irATienda d-md-none">
+                    <p class="textIrATienda">Ir a Tienda</p>
+                  </button>
+
+                  
+                </div>
             </div>
-            
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            
-            <!-- Indicadores -->
-            <ol class="carousel-indicators rounded-indicators d-md-none" id="carousel-indicators">
-              
-            </ol>
-            
-            <button class="irATienda d-md-none">
-              <p class="textIrATienda">Ir a Tienda</p>
-            </button>
+      </div>      
+    </section>        
+      <!-- fin sección Nuestras prendas con carousel dinámico -->
 
-            
-          </div>
-      </div>
-<!-- fin sección Nuestras prendas con carousel dinámico -->
-
-
+      <!-- inicia sección Ver más prendas -->
+    <section id= "verMas">
       <div class="vermas-prenda">
         <figure>
           <img src="./img/inicio-vermas-1.jpg" alt="">
@@ -95,7 +99,10 @@
         </figure>
       </div>
     </section>
-    <section id="somos" class="seccion">
+    <!-- fin sección Ver más prendas -->
+
+    <!-- inicia seccion quienes somos -->
+    <section id="somos">
       <div class="quienes">
         <h1>¿Quiénes somos?</h1>
         <p>
@@ -147,12 +154,16 @@
         <h2>Somos auténticos, como vos.</h2>
         <button class="boton">Descubrir más</button>
       </div>
+    </section>
+<!-- fin seccion quienes somos -->
 
 <!-- inicia carousel comentarios clientes -->
-<img src="./img/comillas.png" class="comillas"/>
-    
+
+       
 <section id="carouselCommentarios">
-  
+
+  <img src="./img/comillas.png" class="comillas"/>
+
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
 
       <div class="carousel-indicators rounded-indicators">
@@ -215,8 +226,9 @@
       
   </div>
 </section>
-<!-- fin carousel comentarios clientes -->    
-  
+<!-- fin carousel comentarios clientes --> 
+
+ <!--inicia seccion compromiso  -->
     </section>
     <section id="compromiso" class="seccion">
       <div class="compromiso">
@@ -235,7 +247,12 @@
         <img src="./img/compromiso.png" alt="" />
       </div>
     </section>
-    <section id="visitanos" class="seccion">
+
+    <!--fin seccion compromiso  -->
+
+    <!--inicia seccion visitanos  -->
+    
+    <section id="visitanos" >
       <div class="mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.9093457709077!2d-68.8484941!3d-32.9269933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bd7c6c13d13%3A0x44857a74491a8f3e!2sAv.%20San%20Mart%C3%ADn%20Sur%20250%2C%20M5501%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1708693134114!5m2!1ses!2sar"
@@ -281,6 +298,8 @@
         </div>
       </div>
     </section>
+    <!--fin seccion visitanos  -->
+
     <footer class="footer">
       <div class="footer-arriba">
         <img

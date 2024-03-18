@@ -38,11 +38,10 @@ body {
 }
 .seccion {
   width: 100%;
-  // height: 100vh;
+  height: 80vh;
 }
 .navbar {
   display: flex;
-  //   width: 1440px;
   width: 100vw;
   height: 130px;
   padding-block: 40px;
@@ -91,6 +90,7 @@ body {
   color: #ffffff;
   font-weight: 1000;
 }
+
 #inicio {
   background-image: url(../img/portada.png);
   background-size: cover;
@@ -107,28 +107,31 @@ body {
     h1 {
       align-self: stretch;
       color: #0d0d0d;
-      font-size: 48px;
+      font-size: 3rem;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
+      
     }
     h3 {
       align-self: stretch;
       color: #333;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      padding-bottom: 48px;
-      padding-top: 24px;
+      padding-bottom: 4.8vh;
+      padding-top: 2.4vh;
     }
   }
+}  
   // sass carousel prendas 
-  
+#seccionPrendas{  
+  background: #FFF;
   .prendas{
     display: flex;
     width: 100vw;
-    // height: 714px;
+    height: 71.4vh;
     padding-top: 100px;
     padding-bottom: 48px;
     flex-direction: column;
@@ -138,21 +141,21 @@ body {
     .textoYBoton{
         display: flex;
         flex-direction: row;
-        gap: 24px;
+        gap: 2.4vw;
         
         .boxNuestrasPrendas{
 
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 24px;
+            gap: 2vh;
             flex: 1 0 0;
         
             .nuestrasPrendas{
                 color: var(--negro, #0D0D0D);
                 text-align: center;
                 font-family: Inter;
-                font-size: 36px;
+                font-size: 2.25rem;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -161,7 +164,7 @@ body {
                 align-self: stretch;
                 color: var(--highlight-texto-secundario, #515151);
                 font-family: Inter;
-                font-size:18px ;
+                font-size: 1.12rem ;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal; 
@@ -175,6 +178,7 @@ body {
             display: flex;
             width: 397px;
             padding: 22px 44px;
+            margin-bottom: 4vh;
             justify-content: center;
             align-items: center;
             gap: 10px;
@@ -192,105 +196,102 @@ body {
         }
     
     }
-    
+  }
 
-}
-
-
-.container{
-    display: flex;
-    width: 100vw;
-    padding: 0px 100px;
-    align-items: flex-start;
-    gap: 24px;
-    
-    #carouselExample{
+  .container{
       display: flex;
-      flex-direction: column;
-
-      figure {
-        position: relative;
-        // height: 80vh;
-        overflow: hidden;
-        // height: 615px;
-        // width: 605px;
-        border-radius: 4px;
-      }
+      width: 100vw;
+      padding: 0px 100px;
+      align-items: flex-start;
+      gap: 24px;
       
-      .capa {
+      #carouselExample{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.45);
-        transition: all 500ms ease-out;
-        opacity: 0;
-        visibility: hidden;
-        .botonImagen {
-          position: absolute;
-          width: 70%;
-          top: 20vh;
-          left: 4vw;
-          
+        flex-direction: column;
+
+        figure {
+          position: relative;
+          // height: 80vh;
+          overflow: hidden;
+          // height: 615px;
+          // width: 605px;
+          border-radius: 4px;
         }
-        .textoImagen{
-              color: #FFF;
-              position:absolute;
-              top:12vh;
-              left:8vw;
+        
+        .capa {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.45);
+          transition: all 500ms ease-out;
+          opacity: 0;
+          visibility: hidden;
+          .botonImagen {
+            position: absolute;
+            width: 70%;
+            top: 20vh;
+            left: 4vw;
+            
+          }
+          .textoImagen{
+                color: #FFF;
+                position:absolute;
+                top:12vh;
+                left:8vw;
+                text-align: center;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 2rem ;
+          }
+        }
+    
+        figure:hover > .capa {
+          opacity: 1;
+          visibility: visible;
+          @media(max-width:992px){
+            display: none;
+          }
+        }
+        
+        .carousel-control-next{
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            right: -1.4vw;
+            top: 14vh;
+            fill: #FAFAFA;
+            filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
+        }
+        
+        .irATienda{
+          background: var(--negro, #0D0D0D);
+          border-radius: 4px;
+          display: flex;
+          width: 100%;
+          margin-top: 5vh;
+          padding: 2.2vh 4.4vw;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          flex-shrink: 0;
+
+          .textIrATienda{
+              color: #FAFAFA;
               text-align: center;
               font-family: Inter;
+              font-size: 1.12rem;
               font-style: normal;
               font-weight: 600;
               line-height: normal;
-              font-size: 2rem ;
-            }
-      }
-  
-      figure:hover > .capa {
-        opacity: 1;
-        visibility: visible;
-        @media(max-width:992px){
-          display: none;
-
+              letter-spacing: 0.5px;
+          }
         }
-      }
-      
-      .carousel-control-next{
-          width: 28px;
-          height: 28px;
-          position: absolute;
-          right: -1.4vw;
-          top: 14vh;
-          fill: #FAFAFA;
-          filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
-      }
-      
-      .irATienda{
-        background: var(--negro, #0D0D0D);
-        border-radius: 4px;
-        display: flex;
-        width: 100%;
-        margin-top: 5vh;
-        padding: 2.2vh 4.4vw;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
-        .textIrATienda{
-            color: #FAFAFA;
-            text-align: center;
-            font-family: Inter;
-            font-size: 1.12rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: 0.5px;
-        }
-      }
       
       .carousel-indicators li {
         list-style: none;
@@ -305,19 +306,22 @@ body {
           opacity: 1;
         }
       }
-    }  
-}
+      
+      }
+  } 
+}   
   // fin sass carousel prendas
 
-
+#verMas{
   .vermas-prenda {
-    margin-top: 150px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
     height: 100vh;
-    gap: 24px;
+    gap: 2vw;
     background-color: #ffffff;
     figure {
       position: relative;
@@ -360,39 +364,40 @@ body {
 #somos {
   background-color: #f5f3f1;
   display: flex;
-  padding-top: 150px;
+  padding-top: 10vh;
+  margin-top: 10vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: stretch;
   .quienes {
     display: flex;
-    width: 818px;
-    height: 134px;
+    width: 81.8vw;
+    height: 13.4vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    gap: 0.5rem;
+    gap: 2.4vh;
+    
     h1 {
-      font-size: 48px;
+      font-size: 3rem;
     }
     p {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 400;
       text-align: center;
     }
   }
   .servicios {
-    margin: 100px;
+    margin: 10vw;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.3);
     .servicio {
       display: flex;
-      padding: 25px;
+      padding: 2.5vh;
       align-items: center;
-      gap: 48px;
+      gap: 4.8vw;
       align-self: stretch;
       .imagen {
         background-color: #d5171f;
@@ -446,19 +451,7 @@ body {
 }
 
 //  inicia sass carousel comentarios clientes
-.comillas{
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  width: 20vw;
-  color: var(--negro, #0D0D0D);
- 
-  
-  @media (max-width:768px) {
-    width: 15vw;
-    
-    
-  }
-}
+
 #carouselCommentarios{ 
   margin-bottom: 20vh;
   display: flex;
@@ -467,6 +460,16 @@ body {
   gap: 10vh;
   background: var(--blanco, #FFF);
   
+  .comillas{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 20vw;
+    color: var(--negro, #0D0D0D);
+       
+    @media (max-width:768px) {
+      width: 15vw;
+    }
+  }
   
   #carouselExampleDark{
     width: 80vw;
@@ -570,28 +573,28 @@ body {
     background-color: #ffffff;
     display: flex;
     width: 50%;
-    height: 364px;
-    padding: 50px;
+    height: 50.4vh;
+    padding: 5vw;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 35px;
     position: absolute;
-    left: 100px;
-    top: calc(600vh + 258px);
+    left: 10vw;
+    top: calc(560vh + 30.8vh);
     border-radius: 4px;
     background: #fafafa;
     box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
     font-weight: 400;
     h1 {
-      font-size: 48px;
+      font-size: 3rem;
     }
     h3 {
-      font-size: 24px;
+      font-size: 1,5rem;
       color: #515151;
     }
     p {
-      font-size: 20px;
+      font-size: 1.25rem;
       color: #515151;
     }
   }
