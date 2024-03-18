@@ -12,6 +12,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   .boton {
     display: flex;
@@ -123,6 +124,7 @@ body {
     }
   }
   // sass carousel prendas 
+  
   .prendas{
     display: flex;
     width: 100vw;
@@ -203,6 +205,9 @@ body {
     gap: 24px;
     
     #carouselExample{
+      display: flex;
+      flex-direction: column;
+
       figure {
         position: relative;
         // height: 80vh;
@@ -263,11 +268,13 @@ body {
           fill: #FAFAFA;
           filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
       }
+      
       .irATienda{
         background: var(--negro, #0D0D0D);
         border-radius: 4px;
         display: flex;
         width: 100%;
+        margin-top: 5vh;
         padding: 2.2vh 4.4vw;
         justify-content: center;
         align-items: center;
@@ -285,23 +292,16 @@ body {
         }
       }
       
-      .rounded-indicators {
+      .carousel-indicators li {
         list-style: none;
-        padding: 0;
-        
-        button {
-          display: inline-block;
-          background-color: red;
-          // background-color: #0D0D0D;
-          width: 1vw;
-          height: 1vh;
-          margin: 0 4px;
-          border-radius: 50%;
-          opacity: 0.5;
-          transition: 0.3s ease-in-out;
-        }
-      
-        button.active {
+        display: inline-block;
+        background-color: #0D0D0D;
+        width: 1vw;
+        height: 1vh;
+        border-radius: 50%;
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+        .active {
           opacity: 1;
         }
       }

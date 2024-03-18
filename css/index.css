@@ -191,6 +191,10 @@ body .boton:hover {
   align-items: flex-start;
   gap: 24px;
 }
+#inicio .container #carouselExample {
+  display: flex;
+  flex-direction: column;
+}
 #inicio .container #carouselExample figure {
   position: relative;
   overflow: hidden;
@@ -250,6 +254,7 @@ body .boton:hover {
   border-radius: 4px;
   display: flex;
   width: 100%;
+  margin-top: 5vh;
   padding: 2.2vh 4.4vw;
   justify-content: center;
   align-items: center;
@@ -266,21 +271,17 @@ body .boton:hover {
   line-height: normal;
   letter-spacing: 0.5px;
 }
-#inicio .container #carouselExample .rounded-indicators {
+#inicio .container #carouselExample .carousel-indicators li {
   list-style: none;
-  padding: 0;
-}
-#inicio .container #carouselExample .rounded-indicators button {
   display: inline-block;
-  background-color: red;
+  background-color: #0D0D0D;
   width: 1vw;
   height: 1vh;
-  margin: 0 4px;
   border-radius: 50%;
   opacity: 0.5;
   transition: 0.3s ease-in-out;
 }
-#inicio .container #carouselExample .rounded-indicators button.active {
+#inicio .container #carouselExample .carousel-indicators li .active {
   opacity: 1;
 }
 #inicio .vermas-prenda {

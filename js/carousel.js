@@ -35,14 +35,13 @@ var images = [
         var activeClass = index === 0 ? 'active' : ''; // Marca el primer slide como activo
         innerHtml += '<div class="carousel-item ' + activeClass + '"><div class="row">';
         chunk.forEach(function(image) {
-          innerHtml += 
-          '<figure class="col position-relative"><img src="' + image + '" class="d-block w-100 fotoPrenda" alt="...">';
+          innerHtml += '<figure class="col position-relative"><img src="' + image + '" class="d-block w-100 fotoPrenda" alt="...">';
           innerHtml += '<div class="capa"><div class="textoImagen">Prenda</div><button class="boton botonImagen">Ver más</button></div>';
           innerHtml += '</figure>';        
         });
         innerHtml += '</div></div>';
-        // Agregar un indicador para cada slide
-        indicatorsHtml += '<li data-bs-target="#carouselExample" data-bs-slide-to="' + index + '" class="' + activeClass + '"></li>';
+        
+        indicatorsHtml += '<li data-bs-target="#carouselExample" data-bs-slide-to="' + index + '" class= "' + activeClass + '"></li>';
       });
       document.getElementById('carousel-inner').innerHTML = innerHtml;
       document.getElementById('carousel-indicators').innerHTML = indicatorsHtml;
