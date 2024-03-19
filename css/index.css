@@ -33,13 +33,11 @@ body .boton {
 body .boton:hover {
   background-color: #1d1d1d;
 }
-
-.seccion {
+body .seccion {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
-
-.navbar {
+body .navbar {
   display: flex;
   width: 100vw;
   height: 130px;
@@ -52,12 +50,12 @@ body .boton:hover {
   left: 0;
   background-color: transparent;
 }
-.navbar .navbar-logo {
+body .navbar .navbar-logo {
   width: 116.279px;
   height: 48px;
   flex-shrink: 0;
 }
-.navbar .navbar-lista {
+body .navbar .navbar-lista {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -66,7 +64,7 @@ body .boton:hover {
   flex: 1 0 0;
   list-style: none;
 }
-.navbar .navbar-lista a {
+body .navbar .navbar-lista a {
   color: #0d0d0d;
   font-size: 18px;
   font-style: normal;
@@ -76,8 +74,7 @@ body .boton:hover {
   -webkit-text-decoration: transparent;
           text-decoration: transparent;
 }
-
-.contacto {
+body .contacto {
   position: fixed;
   height: 60px;
   width: 60px;
@@ -91,13 +88,12 @@ body .boton:hover {
   color: #ffffff;
   font-weight: 1000;
 }
-
-#inicio {
+body #inicio {
   background-image: url(../img/portada.png);
   background-size: cover;
   background-size: 100%;
 }
-#inicio .inicio-slogan {
+body #inicio .inicio-slogan {
   display: flex;
   width: 55vw;
   flex-direction: column;
@@ -107,7 +103,7 @@ body .boton:hover {
   padding-bottom: 35rem;
   box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.1);
 }
-#inicio .inicio-slogan h1 {
+body #inicio .inicio-slogan h1 {
   align-self: stretch;
   color: #0d0d0d;
   font-size: 3rem;
@@ -115,7 +111,7 @@ body .boton:hover {
   font-weight: 600;
   line-height: normal;
 }
-#inicio .inicio-slogan h3 {
+body #inicio .inicio-slogan h3 {
   align-self: stretch;
   color: #333;
   font-size: 1.125rem;
@@ -125,33 +121,32 @@ body .boton:hover {
   padding-bottom: 4.8vh;
   padding-top: 2.4vh;
 }
-
-#seccionPrendas {
+body #seccionPrendas {
   background: #FFF;
 }
-#seccionPrendas .prendas {
+body #seccionPrendas .prendas {
   display: flex;
   width: 100vw;
-  height: 71.4vh;
+  height: 100vh;
   padding-top: 100px;
   padding-bottom: 48px;
   flex-direction: column;
   align-items: center;
   background: #FFF;
 }
-#seccionPrendas .prendas .textoYBoton {
+body #seccionPrendas .prendas .textoYBoton {
   display: flex;
   flex-direction: row;
   gap: 2.4vw;
 }
-#seccionPrendas .prendas .textoYBoton .boxNuestrasPrendas {
+body #seccionPrendas .prendas .textoYBoton .boxNuestrasPrendas {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2vh;
   flex: 1 0 0;
 }
-#seccionPrendas .prendas .textoYBoton .boxNuestrasPrendas .nuestrasPrendas {
+body #seccionPrendas .prendas .textoYBoton .boxNuestrasPrendas .nuestrasPrendas {
   color: var(--negro, #0D0D0D);
   text-align: center;
   font-family: Inter;
@@ -160,7 +155,7 @@ body .boton:hover {
   font-weight: 600;
   line-height: normal;
 }
-#seccionPrendas .prendas .textoYBoton .boxNuestrasPrendas .encontralas {
+body #seccionPrendas .prendas .textoYBoton .boxNuestrasPrendas .encontralas {
   align-self: stretch;
   color: var(--highlight-texto-secundario, #515151);
   font-family: Inter;
@@ -169,7 +164,7 @@ body .boton:hover {
   font-weight: 400;
   line-height: normal;
 }
-#seccionPrendas .prendas .textoYBoton .irATienda {
+body #seccionPrendas .prendas .textoYBoton .irATienda {
   background: var(--negro, #0D0D0D);
   border-radius: 4px;
   display: flex;
@@ -181,7 +176,7 @@ body .boton:hover {
   gap: 10px;
   flex-shrink: 0;
 }
-#seccionPrendas .prendas .textoYBoton .irATienda .textIrATienda {
+body #seccionPrendas .prendas .textoYBoton .irATienda .textIrATienda {
   color: #FAFAFA;
   text-align: center;
   font-family: Inter;
@@ -191,23 +186,23 @@ body .boton:hover {
   line-height: normal;
   letter-spacing: 0.5px;
 }
-#seccionPrendas .container {
+body #seccionPrendas .container {
   display: flex;
   width: 100vw;
   padding: 0px 100px;
   align-items: flex-start;
   gap: 24px;
 }
-#seccionPrendas .container #carouselExample {
+body #seccionPrendas .container #carouselExample {
   display: flex;
   flex-direction: column;
 }
-#seccionPrendas .container #carouselExample figure {
+body #seccionPrendas .container #carouselExample figure {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
 }
-#seccionPrendas .container #carouselExample .capa {
+body #seccionPrendas .container #carouselExample .capa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,13 +215,13 @@ body .boton:hover {
   opacity: 0;
   visibility: hidden;
 }
-#seccionPrendas .container #carouselExample .capa .botonImagen {
+body #seccionPrendas .container #carouselExample .capa .botonImagen {
   position: absolute;
   width: 70%;
   top: 20vh;
   left: 4vw;
 }
-#seccionPrendas .container #carouselExample .capa .textoImagen {
+body #seccionPrendas .container #carouselExample .capa .textoImagen {
   color: #FFF;
   position: absolute;
   top: 12vh;
@@ -238,16 +233,16 @@ body .boton:hover {
   line-height: normal;
   font-size: 2rem;
 }
-#seccionPrendas .container #carouselExample figure:hover > .capa {
+body #seccionPrendas .container #carouselExample figure:hover > .capa {
   opacity: 1;
   visibility: visible;
 }
 @media (max-width: 992px) {
-  #seccionPrendas .container #carouselExample figure:hover > .capa {
+  body #seccionPrendas .container #carouselExample figure:hover > .capa {
     display: none;
   }
 }
-#seccionPrendas .container #carouselExample .carousel-control-next {
+body #seccionPrendas .container #carouselExample .carousel-control-next {
   width: 28px;
   height: 28px;
   position: absolute;
@@ -256,7 +251,7 @@ body .boton:hover {
   fill: #FAFAFA;
   filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
 }
-#seccionPrendas .container #carouselExample .irATienda {
+body #seccionPrendas .container #carouselExample .irATienda {
   background: var(--negro, #0D0D0D);
   border-radius: 4px;
   display: flex;
@@ -268,7 +263,7 @@ body .boton:hover {
   gap: 10px;
   flex-shrink: 0;
 }
-#seccionPrendas .container #carouselExample .irATienda .textIrATienda {
+body #seccionPrendas .container #carouselExample .irATienda .textIrATienda {
   color: #FAFAFA;
   text-align: center;
   font-family: Inter;
@@ -278,7 +273,7 @@ body .boton:hover {
   line-height: normal;
   letter-spacing: 0.5px;
 }
-#seccionPrendas .container #carouselExample .carousel-indicators li {
+body #seccionPrendas .container #carouselExample .carousel-indicators li {
   list-style: none;
   display: inline-block;
   background-color: #0D0D0D;
@@ -288,22 +283,21 @@ body .boton:hover {
   opacity: 0.5;
   transition: 0.3s ease-in-out;
 }
-#seccionPrendas .container #carouselExample .carousel-indicators li .active {
+body #seccionPrendas .container #carouselExample .carousel-indicators li .active {
   opacity: 1;
 }
-
-#verMas .vermas-prenda {
+body #verMas .vermas-prenda {
   margin-top: 10vh;
   margin-bottom: 10vh;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 100vh;
   gap: 2vw;
   background-color: #ffffff;
 }
-#verMas .vermas-prenda figure {
+body #verMas .vermas-prenda figure {
   position: relative;
   height: 80vh;
   overflow: hidden;
@@ -311,12 +305,12 @@ body .boton:hover {
   width: 605px;
   border-radius: 4px;
 }
-#verMas .vermas-prenda img {
+body #verMas .vermas-prenda img {
   height: 100%;
   width: 100%;
   transition: all 500ms ease-out;
 }
-#verMas .vermas-prenda .capa {
+body #verMas .vermas-prenda .capa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,17 +323,16 @@ body .boton:hover {
   opacity: 0;
   visibility: hidden;
 }
-#verMas .vermas-prenda .capa button {
+body #verMas .vermas-prenda .capa button {
   width: 70%;
   box-shadow: none;
   border-style: none;
 }
-#verMas .vermas-prenda figure:hover > .capa {
+body #verMas .vermas-prenda figure:hover > .capa {
   opacity: 1;
   visibility: visible;
 }
-
-#somos {
+body #somos {
   background-color: #f5f3f1;
   display: flex;
   padding-top: 10vh;
@@ -349,7 +342,7 @@ body .boton:hover {
   align-items: center;
   align-self: stretch;
 }
-#somos .quienes {
+body #somos .quienes {
   display: flex;
   width: 81.8vw;
   height: 13.4vh;
@@ -358,28 +351,28 @@ body .boton:hover {
   align-items: center;
   gap: 2.4vh;
 }
-#somos .quienes h1 {
+body #somos .quienes h1 {
   font-size: 3rem;
 }
-#somos .quienes p {
+body #somos .quienes p {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
 }
-#somos .servicios {
+body #somos .servicios {
   margin: 10vw;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.3);
 }
-#somos .servicios .servicio {
+body #somos .servicios .servicio {
   display: flex;
   padding: 2.5vh;
   align-items: center;
   gap: 4.8vw;
   align-self: stretch;
 }
-#somos .servicios .servicio .imagen {
+body #somos .servicios .servicio .imagen {
   background-color: #d5171f;
   display: flex;
   width: 80px;
@@ -390,19 +383,19 @@ body .boton:hover {
   border-radius: 8px;
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 }
-#somos .servicios .servicio .imagen img {
+body #somos .servicios .servicio .imagen img {
   color: #ffffff;
   width: 36px;
   height: 36px;
   flex-shrink: 0;
 }
-#somos .servicios .servicio h3 {
+body #somos .servicios .servicio h3 {
   font-size: 24px;
 }
-#somos .servicios .servicio p {
+body #somos .servicios .servicio p {
   font-size: 18px;
 }
-#somos .banner-somos {
+body #somos .banner-somos {
   background-image: url("../img/image-25.png");
   background-size: cover;
   align-self: stretch;
@@ -415,19 +408,18 @@ body .boton:hover {
   gap: 48px;
   padding-inline-end: 50%;
 }
-#somos .banner-somos h1 {
+body #somos .banner-somos h1 {
   color: #ffffff;
   font-size: 48px;
 }
-#somos .banner-somos h2 {
+body #somos .banner-somos h2 {
   color: #ffffff;
   font-size: 24px;
 }
-#somos .banner-somos .boton {
+body #somos .banner-somos .boton {
   width: 304px;
 }
-
-#carouselCommentarios {
+body #carouselCommentarios {
   margin-bottom: 20vh;
   display: flex;
   flex-direction: column;
@@ -435,18 +427,18 @@ body .boton:hover {
   gap: 10vh;
   background: var(--blanco, #FFF);
 }
-#carouselCommentarios .comillas {
+body #carouselCommentarios .comillas {
   margin-top: 10vh;
   margin-bottom: 5vh;
   width: 20vw;
   color: var(--negro, #0D0D0D);
 }
 @media (max-width: 768px) {
-  #carouselCommentarios .comillas {
+  body #carouselCommentarios .comillas {
     width: 15vw;
   }
 }
-#carouselCommentarios #carouselExampleDark {
+body #carouselCommentarios #carouselExampleDark {
   width: 80vw;
   height: 40vh;
   border-radius: 12px;
@@ -454,11 +446,11 @@ body .boton:hover {
   /* elevacion */
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 }
-#carouselCommentarios #carouselExampleDark .rounded-indicators {
+body #carouselCommentarios #carouselExampleDark .rounded-indicators {
   list-style: none;
   padding: 0;
 }
-#carouselCommentarios #carouselExampleDark .rounded-indicators button {
+body #carouselCommentarios #carouselExampleDark .rounded-indicators button {
   display: inline-block;
   background-color: #0D0D0D;
   width: 10px;
@@ -468,10 +460,10 @@ body .boton:hover {
   opacity: 0.5;
   transition: 0.3s ease-in-out;
 }
-#carouselCommentarios #carouselExampleDark .rounded-indicators button.active {
+body #carouselCommentarios #carouselExampleDark .rounded-indicators button.active {
   opacity: 1;
 }
-#carouselCommentarios #carouselExampleDark .carousel-inner {
+body #carouselCommentarios #carouselExampleDark .carousel-inner {
   display: flex;
   width: 80vw;
   flex-direction: row;
@@ -481,23 +473,23 @@ body .boton:hover {
   flex-shrink: 0;
   align-self: stretch;
 }
-#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item {
+body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item {
   width: 80vw;
   height: 35vh;
 }
-#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .estrellas {
+body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .estrellas {
   margin-top: 3vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1.5vw;
 }
-#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption {
+body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption {
   display: flex;
   flex-direction: column;
   width: 55vw;
 }
-#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
+body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
   text-align: center;
   color: var(--highlight-texto-secundario, #515151);
   text-align: center;
@@ -508,11 +500,11 @@ body .boton:hover {
   line-height: normal;
 }
 @media (max-width: 768px) {
-  #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
+  body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
     font-size: 1rem;
   }
 }
-#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
+body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
   color: var(--highlight-texto-secundario, #515151);
   text-align: center;
   /* web/text/medium */
@@ -523,16 +515,15 @@ body .boton:hover {
   line-height: normal;
 }
 @media (max-width: 768px) {
-  #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
+  body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
     font-size: 0.9rem;
   }
 }
-
-#compromiso {
+body #compromiso {
   background-color: #f7bc5c;
   height: 880px;
 }
-#compromiso .compromiso {
+body #compromiso .compromiso {
   background-color: #ffffff;
   display: flex;
   width: 50%;
@@ -550,23 +541,22 @@ body .boton:hover {
   box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
   font-weight: 400;
 }
-#compromiso .compromiso h1 {
+body #compromiso .compromiso h1 {
   font-size: 3rem;
 }
-#compromiso .compromiso h3 {
+body #compromiso .compromiso h3 {
   font-size: 1, 5rem;
   color: #515151;
 }
-#compromiso .compromiso p {
+body #compromiso .compromiso p {
   font-size: 1.25rem;
   color: #515151;
 }
-#compromiso img {
+body #compromiso img {
   height: 880px;
   padding-left: 50vw;
 }
-
-#visitanos {
+body #visitanos {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -574,53 +564,52 @@ body .boton:hover {
   padding-block: 120px;
   gap: 48px;
 }
-#visitanos .info-visitanos {
+body #visitanos .info-visitanos {
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
-#visitanos .info-visitanos h1 {
+body #visitanos .info-visitanos h1 {
   font-size: 48px;
 }
-#visitanos .info-visitanos h2 {
+body #visitanos .info-visitanos h2 {
   font-size: 24px;
   -webkit-text-decoration: underline 3px;
           text-decoration: underline 3px;
   padding-bottom: 0.5rem;
   font-weight: 800;
 }
-#visitanos .info-visitanos h3 {
+body #visitanos .info-visitanos h3 {
   font-size: 20px;
   font-weight: 100;
 }
-#visitanos .info-visitanos p {
+body #visitanos .info-visitanos p {
   font-size: 20px;
   padding-bottom: 1rem;
   font-weight: 400;
 }
-#visitanos .info-visitanos h4 {
+body #visitanos .info-visitanos h4 {
   font-size: 18px;
   padding-bottom: 0.3rem;
   font-weight: 600;
 }
-#visitanos .info-visitanos .visit-redes {
+body #visitanos .info-visitanos .visit-redes {
   display: flex;
   flex-direction: column;
 }
-#visitanos .info-visitanos .visit-redes .red {
+body #visitanos .info-visitanos .visit-redes .red {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
-#visitanos .info-visitanos .visit-redes .red i {
+body #visitanos .info-visitanos .visit-redes .red i {
   font-size: 32px;
 }
-#visitanos .info-visitanos .visit-redes .red p {
+body #visitanos .info-visitanos .visit-redes .red p {
   font-size: 18px;
   font-weight: 800;
 }
-
-.footer {
+body .footer {
   background-color: #0d0d0d;
   display: flex;
   flex-direction: column;
@@ -628,7 +617,7 @@ body .boton:hover {
   padding-block: 60px;
   padding-inline: 100px;
 }
-.footer .footer-arriba {
+body .footer .footer-arriba {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -637,23 +626,23 @@ body .boton:hover {
   align-items: center;
   padding-bottom: 36px;
 }
-.footer .footer-arriba .direccion {
+body .footer .footer-arriba .direccion {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.footer .footer-arriba .direccion h5 {
+body .footer .footer-arriba .direccion h5 {
   font-size: 16px;
   text-align: center;
   font-weight: lighter;
 }
-.footer .footer-arriba .footer-menu .footer-lista {
+body .footer .footer-arriba .footer-menu .footer-lista {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   list-style: none;
 }
-.footer .footer-arriba .footer-menu .footer-lista a {
+body .footer .footer-arriba .footer-menu .footer-lista a {
   color: #ffffff;
   font-size: 16px;
   font-style: normal;
@@ -661,7 +650,7 @@ body .boton:hover {
   -webkit-text-decoration: transparent;
           text-decoration: transparent;
 }
-.footer .footer-abajo {
+body .footer .footer-abajo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -669,13 +658,13 @@ body .boton:hover {
   width: 100%;
   gap: 36px;
 }
-.footer .footer-abajo .redes {
+body .footer .footer-abajo .redes {
   display: flex;
   flex-direction: row;
   padding-top: 36px;
   gap: 24px;
 }
-.footer .footer-abajo .redes a {
+body .footer .footer-abajo .redes a {
   font-size: 24px;
   color: #ffffff;
   text-decoration: none;
