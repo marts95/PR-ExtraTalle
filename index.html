@@ -14,7 +14,7 @@
     <title>EXTRA TALLE PAG DE PRUEBAS</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar ">
       <div class="navbar-logo">
         <img src="./img/logos.svg" />
       </div>
@@ -26,17 +26,18 @@
           <a href="#visitanos"><li>Visítanos</li></a>
         </ul>
       </div>
-      <button class="boton d-none d-md-block">Ir a la tienda</button>
+      <button class="boton d-none  d-lg-block d-xl-block">Ir a la tienda</button>
     </nav>
 
-    <section id="inicio" class="seccion">
+    <section id="inicio">
       <div class="inicio-slogan">
-        <h1>Moda que se ajusta a vos, no al revés</h1>
-        
+        <h1 class="d-sm-none d-md-block">Moda que se ajusta a vos,<br> no al revés</h1>
+        <h1 class="d-md-none d-sm-block">Moda que se ajusta a vos, no al revés</h1>
         <h3>
           ¡Vestite con estilo y encontrá prendas que se adapatan a tu estilo de
           vida!
         </h3>
+        <img src="./img/portadaMobile.png" class="imagenInicioMobile d-md-none d-sm-block"/>
         <button class="boton">Explorar la colección</button>
       </div>
     </section>  
@@ -230,7 +231,7 @@
 
  <!--inicia seccion compromiso  -->
     </section>
-    <section id="compromiso" class="seccion">
+    <section id="compromiso">
       <div class="compromiso">
         <h1>Compromiso</h1>
         <h3>Moda auténtica para cuerpos reales.</h3>

@@ -26,7 +26,7 @@ body {
     color: #fafafa;
     text-align: center;
     text-wrap: nowrap;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -36,18 +36,23 @@ body {
     background-color: #1d1d1d;
   }
 
-  .seccion {
-    width: 100%;
-    height: 100vh;
-  }
+  // .seccion {
+  //   width: 100%;
+  //   height: 100vh;
+
+  //   @media(max-width:768px){
+  //     height: 50vh;
+  //   }
+    
+  // }
   .navbar {
     display: flex;
     width: 100vw;
-    height: 130px;
-    padding-block: 40px;
-    padding-inline: 110px;
+    height: 10.24vh;
+    padding-block: 4vh;
+    padding-inline: 11vw;
     align-items: center;
-    gap: 40px;
+    gap: 4vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,12 +67,12 @@ body {
       justify-content: flex-end;
       align-items: center;
       width: 60vw;
-      gap: 40px;
+      gap: 4vw;
       flex: 1 0 0;
       list-style: none;
       a {
         color: #0d0d0d;
-        font-size: 18px;
+        font-size: 1.12rem;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -92,16 +97,22 @@ body {
   }
 
   #inicio {
+    width: 100vw;
+    height: 100vh;
     background-image: url(../img/portada.png);
     background-size: cover;
     background-size: 100%;
+    @media(max-width:768px){
+      background-image: none;
+      
+    }
     .inicio-slogan {
       display: flex;
       width: 55vw;
       flex-direction: column;
       align-items: flex-start;
-      padding-left: 100px;
-      padding-top: 15%;
+      padding-left: 10vw;
+      padding-top:35vh;
       padding-bottom: 35rem;
       box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.1);
       h1 {
@@ -111,6 +122,10 @@ body {
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        @media(max-width:768px){
+          font-size:2.25rem ;
+          text-align: center;
+        }
         
       }
       h3 {
@@ -122,6 +137,15 @@ body {
         line-height: normal;
         padding-bottom: 4.8vh;
         padding-top: 2.4vh;
+
+        @media(max-width:768px){
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+      .imageInicioMobile{
+        width: 100vw;
+        height: 35vh;
       }
     }
   }  
@@ -187,7 +211,7 @@ body {
                   color: #FAFAFA;
                   text-align: center;
                   font-family: Inter;
-                  font-size: 18px;
+                  font-size: 1.125rem;
                   font-style: normal;
                   font-weight: 600;
                   line-height: normal;
@@ -201,7 +225,9 @@ body {
     .container{
         display: flex;
         width: 100vw;
-        padding: 0px 100px;
+        height: 71vh;
+        padding: 0vh 10vh;
+        
         align-items: flex-start;
         gap: 24px;
         
@@ -230,6 +256,9 @@ body {
             transition: all 500ms ease-out;
             opacity: 0;
             visibility: hidden;
+            @media(max-width:768px){
+              display: none;
+            }
             .botonImagen {
               position: absolute;
               width: 70%;
@@ -248,25 +277,31 @@ body {
                   font-weight: 600;
                   line-height: normal;
                   font-size: 2rem ;
+                  @media(max-width:992px){
+                    font-size: 1rem;
+                    font-weight: 400;
+                  }
+
             }
           }
       
           figure:hover > .capa {
             opacity: 1;
             visibility: visible;
-            @media(max-width:992px){
-              display: none;
-            }
+           
           }
           
           .carousel-control-next{
-              width: 28px;
-              height: 28px;
+              width: 2.8vw;
+              height: 2.8vh;
               position: absolute;
-              right: -1.4vw;
-              top: 14vh;
+              right: -2vw;
+              top: 20vh;
               fill: #FAFAFA;
               filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
+              @media(max-width:768px){
+                top:15vh;
+              }
           }
           
           .irATienda{
@@ -314,8 +349,8 @@ body {
 
   #verMas{
     .vermas-prenda {
-      margin-top: 10vh;
-      margin-bottom: 10vh;
+      margin-top: 15vh;
+      margin-bottom: 15vh;
       width: 100vw;
       height: 100vh;
       display: flex;
@@ -328,8 +363,8 @@ body {
         position: relative;
         height: 80vh;
         overflow: hidden;
-        height: 615px;
-        width: 605px;
+        height: 90vh;
+        width: 40vw;
         border-radius: 4px;
       }
       img {
@@ -403,8 +438,8 @@ body {
         .imagen {
           background-color: #d5171f;
           display: flex;
-          width: 80px;
-          height: 80px;
+          width: 8dvw;
+          height: 14vh;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -412,16 +447,16 @@ body {
           box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
           img {
             color: #ffffff;
-            width: 36px;
-            height: 36px;
+            width: 3.6vw;
+            height: 40vh;
             flex-shrink: 0;
           }
         }
         h3 {
-          font-size: 24px;
+          font-size: 1.5rem;
         }
         p {
-          font-size: 18px;
+          font-size: 1.125rem;
         }
       }
     }
@@ -429,24 +464,24 @@ body {
       background-image: url("../img/image-25.png");
       background-size: cover;
       align-self: stretch;
-      height: 615px;
+      height: 85vh;
       display: flex;
       flex-direction: column;
       text-align: start;
-      padding-left: 100px;
-      padding-top: 150px;
-      gap: 48px;
+      padding-left: 10vw;
+      padding-top: 14vh;
+      gap: 5vh;
       padding-inline-end: 50%;
       h1 {
         color: #ffffff;
-        font-size: 48px;
+        font-size: 3rem;
       }
       h2 {
         color: #ffffff;
-        font-size: 24px;
+        font-size: 1.5rem;
       }
       .boton {
-        width: 304px;
+        width: 20vw;
       }
     }
   }
@@ -474,7 +509,7 @@ body {
     
     #carouselExampleDark{
       width: 80vw;
-      height: 40vh;
+      height: 60vh;
       border-radius: 12px;
       background: #FAFAFA;
       /* elevacion */
@@ -488,8 +523,8 @@ body {
               button {
                 display: inline-block;
                 background-color: #0D0D0D;
-                width: 10px;
-                height: 10px;
+                width: 1vw;
+                height: 2vh;
                 margin: 0 4px;
                 border-radius: 50%;
                 opacity: 0.5;
@@ -511,11 +546,13 @@ body {
               align-self: stretch;
 
               .carousel-item{
+                
                 width: 80vw;
-                height:35vh;
+                height:50vh;
                 
                   .estrellas{
                     margin-top: 3vh;
+                    
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -524,13 +561,13 @@ body {
                   
               }
               .carousel-caption{
-                  
+                
                 display: flex;
                 flex-direction: column;
-                width: 55vw;
+                width: 60vw;
                       
                 .textoComentario{
-                  text-align: center;
+                   
                   color: var(--highlight-texto-secundario, #515151);
                   text-align: center;
                   font-family: Inter;
@@ -565,22 +602,23 @@ body {
     }
   }
     // fin sass carousel comentarios clientes   
-  #compromiso {
+  
+    #compromiso {
     background-color: #f7bc5c;
-    height: 880px;
+    height: 88vh;
     .compromiso {
       background-color: #ffffff;
       display: flex;
-      width: 50%;
-      height: 50.4vh;
+      width: 50vw;
+      height: 60vh;
       padding: 5vw;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      gap: 35px;
+      gap: 3vh;
       position: absolute;
-      left: 10vw;
-      top: calc(560vh + 30.8vh);
+      margin-top: 16vh;
+      margin-left: 15vw;
       border-radius: 4px;
       background: #fafafa;
       box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
@@ -598,8 +636,9 @@ body {
       }
     }
     img {
-      height: 880px;
-      padding-left: 50vw;
+      
+      height: 88vh;
+      padding-left: 60vw;
     }
   }
   #visitanos {
@@ -614,25 +653,25 @@ body {
       flex-direction: column;
       gap: 48px;
       h1 {
-        font-size: 48px;
+        font-size: 3rem;
       }
       h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
         text-decoration: underline 3px;
         padding-bottom: 0.5rem;
         font-weight: 800;
       }
       h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 100;
       }
       p {
-        font-size: 20px;
+        font-size: 1.25rm;
         padding-bottom: 1rem;
         font-weight: 400;
       }
       h4 {
-        font-size: 18px;
+        font-size: 1.125rem;
         padding-bottom: 0.3rem;
         font-weight: 600;
       }
@@ -644,10 +683,10 @@ body {
           flex-direction: row;
           gap: 1rem;
           i {
-            font-size: 32px;
+            font-size: 2rem;
           }
           p {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 800;
           }
         }
@@ -659,23 +698,23 @@ body {
     display: flex;
     flex-direction: column;
     color: #ffffff;
-    padding-block: 60px;
-    padding-inline: 100px;
+    padding-block: 10vh;
+    padding-inline: 10vw;
     .footer-arriba {
       display: flex;
       flex-direction: row;
       width: 100%;
-      height: 110px;
+      height: 25vh;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 36px;
+      padding-bottom: 4vh;
 
       .direccion {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         h5 {
-          font-size: 16px;
+          font-size: 1rem;
           text-align: center;
           font-weight: lighter;
         }
@@ -688,7 +727,7 @@ body {
           list-style: none;
           a {
             color: #ffffff;
-            font-size: 16px;
+            font-size: 1rem;
             font-style: normal;
             letter-spacing: 0.5px;
             text-decoration: transparent;
@@ -702,14 +741,14 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
-      gap: 36px;
+      gap: 3vh;
       .redes {
         display: flex;
         flex-direction: row;
-        padding-top: 36px;
-        gap: 24px;
+        padding-top: 4.5vh;
+        gap: 2.4vw;
         a {
-          font-size: 24px;
+          font-size: 1.5rem;
           color: #ffffff;
           text-decoration: none;
         }

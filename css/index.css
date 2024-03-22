@@ -24,7 +24,7 @@ body .boton {
   color: #fafafa;
   text-align: center;
   text-wrap: nowrap;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -33,18 +33,14 @@ body .boton {
 body .boton:hover {
   background-color: #1d1d1d;
 }
-body .seccion {
-  width: 100%;
-  height: 100vh;
-}
 body .navbar {
   display: flex;
   width: 100vw;
-  height: 130px;
-  padding-block: 40px;
-  padding-inline: 110px;
+  height: 10.24vh;
+  padding-block: 4vh;
+  padding-inline: 11vw;
   align-items: center;
-  gap: 40px;
+  gap: 4vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -60,13 +56,13 @@ body .navbar .navbar-lista {
   justify-content: flex-end;
   align-items: center;
   width: 60vw;
-  gap: 40px;
+  gap: 4vw;
   flex: 1 0 0;
   list-style: none;
 }
 body .navbar .navbar-lista a {
   color: #0d0d0d;
-  font-size: 18px;
+  font-size: 1.12rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -89,17 +85,24 @@ body .contacto {
   font-weight: 1000;
 }
 body #inicio {
+  width: 100vw;
+  height: 100vh;
   background-image: url(../img/portada.png);
   background-size: cover;
   background-size: 100%;
+}
+@media (max-width: 768px) {
+  body #inicio {
+    background-image: none;
+  }
 }
 body #inicio .inicio-slogan {
   display: flex;
   width: 55vw;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 100px;
-  padding-top: 15%;
+  padding-left: 10vw;
+  padding-top: 35vh;
   padding-bottom: 35rem;
   box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.1);
 }
@@ -111,6 +114,12 @@ body #inicio .inicio-slogan h1 {
   font-weight: 600;
   line-height: normal;
 }
+@media (max-width: 768px) {
+  body #inicio .inicio-slogan h1 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+}
 body #inicio .inicio-slogan h3 {
   align-self: stretch;
   color: #333;
@@ -120,6 +129,16 @@ body #inicio .inicio-slogan h3 {
   line-height: normal;
   padding-bottom: 4.8vh;
   padding-top: 2.4vh;
+}
+@media (max-width: 768px) {
+  body #inicio .inicio-slogan h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+body #inicio .inicio-slogan .imageInicioMobile {
+  width: 100vw;
+  height: 35vh;
 }
 body #seccionPrendas {
   background: #FFF;
@@ -180,7 +199,7 @@ body #seccionPrendas .prendas .textoYBoton .irATienda .textIrATienda {
   color: #FAFAFA;
   text-align: center;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -189,7 +208,8 @@ body #seccionPrendas .prendas .textoYBoton .irATienda .textIrATienda {
 body #seccionPrendas .container {
   display: flex;
   width: 100vw;
-  padding: 0px 100px;
+  height: 71vh;
+  padding: 0vh 10vh;
   align-items: flex-start;
   gap: 24px;
 }
@@ -215,6 +235,11 @@ body #seccionPrendas .container #carouselExample .capa {
   opacity: 0;
   visibility: hidden;
 }
+@media (max-width: 768px) {
+  body #seccionPrendas .container #carouselExample .capa {
+    display: none;
+  }
+}
 body #seccionPrendas .container #carouselExample .capa .botonImagen {
   position: absolute;
   width: 70%;
@@ -233,23 +258,29 @@ body #seccionPrendas .container #carouselExample .capa .textoImagen {
   line-height: normal;
   font-size: 2rem;
 }
+@media (max-width: 992px) {
+  body #seccionPrendas .container #carouselExample .capa .textoImagen {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
 body #seccionPrendas .container #carouselExample figure:hover > .capa {
   opacity: 1;
   visibility: visible;
 }
-@media (max-width: 992px) {
-  body #seccionPrendas .container #carouselExample figure:hover > .capa {
-    display: none;
-  }
-}
 body #seccionPrendas .container #carouselExample .carousel-control-next {
-  width: 28px;
-  height: 28px;
+  width: 2.8vw;
+  height: 2.8vh;
   position: absolute;
-  right: -1.4vw;
-  top: 14vh;
+  right: -2vw;
+  top: 20vh;
   fill: #FAFAFA;
   filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
+}
+@media (max-width: 768px) {
+  body #seccionPrendas .container #carouselExample .carousel-control-next {
+    top: 15vh;
+  }
 }
 body #seccionPrendas .container #carouselExample .irATienda {
   background: var(--negro, #0D0D0D);
@@ -287,8 +318,8 @@ body #seccionPrendas .container #carouselExample .carousel-indicators li .active
   opacity: 1;
 }
 body #verMas .vermas-prenda {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -301,8 +332,8 @@ body #verMas .vermas-prenda figure {
   position: relative;
   height: 80vh;
   overflow: hidden;
-  height: 615px;
-  width: 605px;
+  height: 90vh;
+  width: 40vw;
   border-radius: 4px;
 }
 body #verMas .vermas-prenda img {
@@ -375,8 +406,8 @@ body #somos .servicios .servicio {
 body #somos .servicios .servicio .imagen {
   background-color: #d5171f;
   display: flex;
-  width: 80px;
-  height: 80px;
+  width: 8dvw;
+  height: 14vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -385,39 +416,39 @@ body #somos .servicios .servicio .imagen {
 }
 body #somos .servicios .servicio .imagen img {
   color: #ffffff;
-  width: 36px;
-  height: 36px;
+  width: 3.6vw;
+  height: 40vh;
   flex-shrink: 0;
 }
 body #somos .servicios .servicio h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 body #somos .servicios .servicio p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 body #somos .banner-somos {
   background-image: url("../img/image-25.png");
   background-size: cover;
   align-self: stretch;
-  height: 615px;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding-left: 100px;
-  padding-top: 150px;
-  gap: 48px;
+  padding-left: 10vw;
+  padding-top: 14vh;
+  gap: 5vh;
   padding-inline-end: 50%;
 }
 body #somos .banner-somos h1 {
   color: #ffffff;
-  font-size: 48px;
+  font-size: 3rem;
 }
 body #somos .banner-somos h2 {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 body #somos .banner-somos .boton {
-  width: 304px;
+  width: 20vw;
 }
 body #carouselCommentarios {
   margin-bottom: 20vh;
@@ -440,7 +471,7 @@ body #carouselCommentarios .comillas {
 }
 body #carouselCommentarios #carouselExampleDark {
   width: 80vw;
-  height: 40vh;
+  height: 60vh;
   border-radius: 12px;
   background: #FAFAFA;
   /* elevacion */
@@ -453,8 +484,8 @@ body #carouselCommentarios #carouselExampleDark .rounded-indicators {
 body #carouselCommentarios #carouselExampleDark .rounded-indicators button {
   display: inline-block;
   background-color: #0D0D0D;
-  width: 10px;
-  height: 10px;
+  width: 1vw;
+  height: 2vh;
   margin: 0 4px;
   border-radius: 50%;
   opacity: 0.5;
@@ -475,7 +506,7 @@ body #carouselCommentarios #carouselExampleDark .carousel-inner {
 }
 body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item {
   width: 80vw;
-  height: 35vh;
+  height: 50vh;
 }
 body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .estrellas {
   margin-top: 3vh;
@@ -487,10 +518,9 @@ body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .
 body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption {
   display: flex;
   flex-direction: column;
-  width: 55vw;
+  width: 60vw;
 }
 body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
-  text-align: center;
   color: var(--highlight-texto-secundario, #515151);
   text-align: center;
   font-family: Inter;
@@ -521,21 +551,21 @@ body #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-captio
 }
 body #compromiso {
   background-color: #f7bc5c;
-  height: 880px;
+  height: 88vh;
 }
 body #compromiso .compromiso {
   background-color: #ffffff;
   display: flex;
-  width: 50%;
-  height: 50.4vh;
+  width: 50vw;
+  height: 60vh;
   padding: 5vw;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 35px;
+  gap: 3vh;
   position: absolute;
-  left: 10vw;
-  top: 590.8vh;
+  margin-top: 16vh;
+  margin-left: 15vw;
   border-radius: 4px;
   background: #fafafa;
   box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
@@ -553,8 +583,8 @@ body #compromiso .compromiso p {
   color: #515151;
 }
 body #compromiso img {
-  height: 880px;
-  padding-left: 50vw;
+  height: 88vh;
+  padding-left: 60vw;
 }
 body #visitanos {
   background-color: #ffffff;
@@ -570,26 +600,26 @@ body #visitanos .info-visitanos {
   gap: 48px;
 }
 body #visitanos .info-visitanos h1 {
-  font-size: 48px;
+  font-size: 3rem;
 }
 body #visitanos .info-visitanos h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   -webkit-text-decoration: underline 3px;
           text-decoration: underline 3px;
   padding-bottom: 0.5rem;
   font-weight: 800;
 }
 body #visitanos .info-visitanos h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 100;
 }
 body #visitanos .info-visitanos p {
-  font-size: 20px;
+  font-size: 1.25rm;
   padding-bottom: 1rem;
   font-weight: 400;
 }
 body #visitanos .info-visitanos h4 {
-  font-size: 18px;
+  font-size: 1.125rem;
   padding-bottom: 0.3rem;
   font-weight: 600;
 }
@@ -603,10 +633,10 @@ body #visitanos .info-visitanos .visit-redes .red {
   gap: 1rem;
 }
 body #visitanos .info-visitanos .visit-redes .red i {
-  font-size: 32px;
+  font-size: 2rem;
 }
 body #visitanos .info-visitanos .visit-redes .red p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 800;
 }
 body .footer {
@@ -614,17 +644,17 @@ body .footer {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  padding-block: 60px;
-  padding-inline: 100px;
+  padding-block: 10vh;
+  padding-inline: 10vw;
 }
 body .footer .footer-arriba {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 110px;
+  height: 25vh;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 36px;
+  padding-bottom: 4vh;
 }
 body .footer .footer-arriba .direccion {
   display: flex;
@@ -632,7 +662,7 @@ body .footer .footer-arriba .direccion {
   gap: 1rem;
 }
 body .footer .footer-arriba .direccion h5 {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   font-weight: lighter;
 }
@@ -644,7 +674,7 @@ body .footer .footer-arriba .footer-menu .footer-lista {
 }
 body .footer .footer-arriba .footer-menu .footer-lista a {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   letter-spacing: 0.5px;
   -webkit-text-decoration: transparent;
@@ -656,16 +686,16 @@ body .footer .footer-abajo {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 36px;
+  gap: 3vh;
 }
 body .footer .footer-abajo .redes {
   display: flex;
   flex-direction: row;
-  padding-top: 36px;
-  gap: 24px;
+  padding-top: 4.5vh;
+  gap: 2.4vw;
 }
 body .footer .footer-abajo .redes a {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ffffff;
   text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
